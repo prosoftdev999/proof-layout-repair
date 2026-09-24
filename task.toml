@@ -1,0 +1,30 @@
+artifacts = ["/app/output/final_layout.json"]
+
+[task]
+name = "afterquery/proof-layout-repair"
+
+[metadata]
+author_name = "Thomas Morison"
+author_email = "matiasv931026@gmail.com"
+difficulty_explanation = "This synthetic prepress handoff now requires several dependent recovery stages rather than a direct replay. The evidence contains 35 anonymous proof placements from five production runs, 20 registration marks, run-specific proxy dimensions for nine assets, 11 frame edits, and 11 panel-control events. Proof slots are run-local, run times must be reconciled with the revision clock, measured proof geometry must be related back to nominal plate coordinates, and crop windows are recorded in per-run proxy pixels rather than source pixels. Only after those relationships are recovered can the practitioner separate plausible image-placement and panel-transform behaviors and replay the unproofed rv09-rv11 tail. The author-side exhaustive audit evaluates 512 plausible combinations of crop, anchor, clamping, mirroring, quantization, relink, panel-pivot, nudge-space, and inset-scaling semantics and finds one uniquely supported behavior. The work resembles a damaged prepress automation handoff that a production designer or design-automation engineer would investigate; a focused expert would reasonably spend about 4 to 6 hours on calibration, correspondence recovery, hypothesis testing, and final reconstruction."
+solution_explanation = "The reference solution first places each archived production run on the document revision timeline and derives each run's measurement calibration from its registration marks. It then accounts for the run-specific proxy image dimensions while comparing anonymous proof slots with rendered frame candidates. Candidate production behaviors are tested across all archived runs, including frame edits and panel-control history, until one behavior is uniquely supported by the combined geometry and crop evidence. That recovered behavior is replayed through rv11, and the final viewer-facing image boxes plus source-pixel crop windows are emitted as JSON."
+verification_explanation = "The verifier safely parses only `/app/output/final_layout.json`; it never imports or executes agent-produced code. It requires exactly one placement for every shipped frame, the rv11 asset assignment, finite JSON numbers, viewer-facing geometry within 0.026 mm, and source-pixel crop coordinates within 0.6 px. The sealed reference is independent of the candidate output. Fresh near-miss measurements against this bundle show: stopping at the last archived state reaches 69.60 mm and 3170.04 px error with one stale asset; contain fitting reaches 70.80 mm; centering reaches 30.05 mm; omitting clamping reaches 32.65 mm; using the front-side anchor convention on back frames reaches 12.75 mm; retaining focus across a relink reaches 48.30 mm; 0.10 mm export quantization reaches 0.05 mm; scaling panels about the sheet origin reaches 5.70 mm; treating nudges as panel-local distances reaches 0.05 mm; leaving insets unscaled reaches 0.35 mm and 1.49 px; and ignoring panel history reaches 5.25 mm. Every one of those well-formed outputs scores 0, while the reference scores 1 and no output scores 0."
+category = "Media"
+subcategory = "Design"
+tags = ["prepress", "layout", "design-automation", "proof-recovery"]
+expert_time_estimate_hours = 5.0
+relevant_experience = "Relevant production-design background includes print-ready layout preparation, vendor proof comparison, registration and plate-coordinate checks, focal-point cropping, mirrored back-side layouts, proxy-image workflows, and small scripts that reconcile coordinate-heavy production handoffs."
+
+[verifier]
+environment_mode = "separate"
+timeout_sec = 120
+
+[agent]
+timeout_sec = 7200
+
+[environment]
+build_timeout_sec = 600
+cpus = 2
+memory_mb = 2048
+storage_mb = 4096
+gpus = 0

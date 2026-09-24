@@ -1,0 +1,8 @@
+frame_id,side,x_mm,y_mm,w_mm,h_mm,inset_mm,anchor_id,asset_id,focus_x,focus_y
+fr_01,front,18.0,16.0,112.0,74.0,2.5,an_29,im_2c7,,
+fr_02,front,142.0,16.0,96.0,112.0,3.0,an_31,im_4d1,,
+fr_03,front,250.0,18.0,150.0,88.0,2.0,an_14,im_5f8,,
+fr_04,front,26.0,146.0,148.0,122.0,4.0,an_48,im_7a3,,
+fr_05,back,198.0,148.0,88.0,118.0,3.5,an_53,im_8e6,,
+fr_06,back,300.0,142.0,96.0,126.0,3.0,an_29,im_b4a,,
+fr_07,back,185.0,18.0,102.0,102.0,2.5,an_31,im_c9d,,

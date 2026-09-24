@@ -1,0 +1,89 @@
+{
+  "revision": "rv11",
+  "placements": [
+    {
+      "frame_id": "fr_01",
+      "asset_id": "im_2c7",
+      "x_mm": 22.15,
+      "y_mm": 19.5,
+      "width_mm": 105.6,
+      "height_mm": 70.4,
+      "crop_left_px": 0.0,
+      "crop_top_px": 0.0,
+      "crop_right_px": 6048.0,
+      "crop_bottom_px": 3900.11
+    },
+    {
+      "frame_id": "fr_02",
+      "asset_id": "im_e2b",
+      "x_mm": 104.65,
+      "y_mm": 20.0,
+      "width_mm": 156.95,
+      "height_mm": 104.6,
+      "crop_left_px": 1334.15,
+      "crop_top_px": 0.0,
+      "crop_right_px": 4268.49,
+      "crop_bottom_px": 3456.0
+    },
+    {
+      "frame_id": "fr_03",
+      "asset_id": "im_5f8",
+      "x_mm": 254.45,
+      "y_mm": 7.1,
+      "width_mm": 149.95,
+      "height_mm": 100.0,
+      "crop_left_px": 0.0,
+      "crop_top_px": 286.34,
+      "crop_right_px": 5472.0,
+      "crop_bottom_px": 3434.62
+    },
+    {
+      "frame_id": "fr_04",
+      "asset_id": "im_7a3",
+      "x_mm": 24.35,
+      "y_mm": 146.4,
+      "width_mm": 182.1,
+      "height_mm": 121.2,
+      "crop_left_px": 0.0,
+      "crop_top_px": 0.0,
+      "crop_right_px": 4113.9,
+      "crop_bottom_px": 3280.0
+    },
+    {
+      "frame_id": "fr_05",
+      "asset_id": "im_8e6",
+      "x_mm": 194.55,
+      "y_mm": 150.2,
+      "width_mm": 86.0,
+      "height_mm": 129.05,
+      "crop_left_px": 0.0,
+      "crop_top_px": 0.0,
+      "crop_right_px": 3840.0,
+      "crop_bottom_px": 5104.94
+    },
+    {
+      "frame_id": "fr_06",
+      "asset_id": "im_f05",
+      "x_mm": 278.75,
+      "y_mm": 145.6,
+      "width_mm": 161.9,
+      "height_mm": 121.45,
+      "crop_left_px": 561.96,
+      "crop_top_px": 0.0,
+      "crop_right_px": 2829.96,
+      "crop_bottom_px": 3024.0
+    },
+    {
+      "frame_id": "fr_07",
+      "asset_id": "im_c9d",
+      "x_mm": 192.8,
+      "y_mm": 24.45,
+      "width_mm": 90.75,
+      "height_mm": 136.15,
+      "crop_left_px": 0.0,
+      "crop_top_px": 0.0,
+      "crop_right_px": 4480.0,
+      "crop_bottom_px": 4480.0
+    }
+  ]
+}

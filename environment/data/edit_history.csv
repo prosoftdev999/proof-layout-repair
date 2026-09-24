@@ -1,0 +1,12 @@
+revision,frame_id,action,p1,p2,p3,p4
+rv01,fr_02,focus,0.68,0.26,,
+rv02,fr_05,resize,194.0,146.0,92.0,120.0
+rv03,fr_01,anchor,an_48,,,
+rv04,fr_06,focus,0.81,0.39,,
+rv05,fr_02,asset,im_e2b,,,
+rv06,fr_07,inset,4.5,,,
+rv07,fr_04,focus,0.22,0.76,,
+rv08,fr_05,anchor,an_29,,,
+rv09,fr_04,resize,24.0,144.0,156.0,126.0
+rv10,fr_06,asset,im_f05,,,
+rv11,fr_07,focus,0.79,0.28,,

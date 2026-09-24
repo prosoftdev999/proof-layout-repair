@@ -1,0 +1,12 @@
+revision,panel_id,action,p1,p2
+rv01,pn_17,nudge,1.8,-1.1
+rv02,pn_24,scale,1.018,
+rv03,pn_17,scale,0.987,
+rv04,pn_38,nudge,-2.6,1.7
+rv05,pn_24,nudge,1.3,-2.0
+rv06,pn_38,scale,1.012,
+rv07,pn_52,scale,0.976,
+rv08,pn_17,nudge,-0.9,1.4
+rv09,pn_24,scale,1.009,
+rv10,pn_38,nudge,1.1,-0.7
+rv11,pn_52,nudge,2.2,0.8
